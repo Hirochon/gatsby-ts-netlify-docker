@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  gatsby:
+    build: ./
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./:/heacet-com
+    environment:
+      - NODE_ENV=development
+    ports:
+      - 8000:8000
